@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:chart="sap.suite.ui.microchart" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" controllerName="zhb4.zhb4_tile_stewardship.controller.Tile" displayBlock="true">
+    <GenericTile headerImage="sap-icon://activity-items" header="Registro Stewardship" frameType="TwoByOne" subheader="Capacitacion, Siembra, Cosecha, Almac." press="onPressTile">
+        <tileContent>
+            <TileContent footer="Ingresa aqui" footerColor="Good">
+                <content>
+					<chart:DeltaMicroChart id="_chart" value1="100" value2="" size="Responsive" title1="Stewardship" title2="Registrado a la fecha" displayValue1="a completar" displayValue2="" deltaDisplayValue="" color="" />
+                </content>
+            </TileContent>
+        </tileContent>
+    </GenericTile>
+</mvc:View>

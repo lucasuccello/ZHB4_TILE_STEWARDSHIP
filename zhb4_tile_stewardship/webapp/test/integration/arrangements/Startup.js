@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Opa5) {
 	"use strict";
 
-	return Opa5.extend("zhb4.zhb4_tile_misdatos.test.integration.arrangements.Startup", {
+	return Opa5.extend("zhb4.zhb4_tile_stewardship.test.integration.arrangements.Startup", {
 
 		iStartMyApp: function (oOptionsParameter) {
 			var oOptions = oOptionsParameter || {};
@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "zhb4.zhb4_tile_misdatos",
+					name: "zhb4.zhb4_tile_stewardship",
 					async: true
 				},
 				hash: oOptions.hash,

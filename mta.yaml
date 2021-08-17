@@ -1,81 +1,81 @@
 _schema-version: "3.2"
-ID: ZHB4_TILE_MISDATOS
+ID: zhb4_tile_stewardship
 version: 0.0.1
 modules:
-- name: ZHB4_TILE_MISDATOS-destination-content
+- name: zhb4_tile_stewardship-destination-content
   type: com.sap.application.content
   requires:
-  - name: ZHB4_TILE_MISDATOS-destination-service
+  - name: zhb4_tile_stewardship-destination-service
     parameters:
       content-target: true
-  - name: ZHB4_TILE_MISDATOS_html_repo_host
+  - name: zhb4_tile_stewardship_html_repo_host
     parameters:
       service-key:
-        name: ZHB4_TILE_MISDATOS_html_repo_host-key
-  - name: uaa_ZHB4_TILE_MISDATOS
+        name: zhb4_tile_stewardship_html_repo_host-key
+  - name: uaa_zhb4_tile_stewardship
     parameters:
       service-key:
-        name: uaa_ZHB4_TILE_MISDATOS-key
+        name: uaa_zhb4_tile_stewardship-key
   parameters:
     content:
       instance:
         destinations:
-        - Name: zhb4_tile_misdatos_ZHB4_TILE_MISDATOS_html_repo_host
-          ServiceInstanceName: ZHB4_TILE_MISDATOS-html5-app-host-service
-          ServiceKeyName: ZHB4_TILE_MISDATOS_html_repo_host-key
-          sap.cloud.service: zhb4_tile_misdatos
+        - Name: zhb4_tile_stewardship_zhb4_tile_stewardship_html_repo_host
+          ServiceInstanceName: zhb4_tile_stewardship-html5-app-host-service
+          ServiceKeyName: zhb4_tile_stewardship_html_repo_host-key
+          sap.cloud.service: zhb4_tile_stewardship
         - Authentication: OAuth2UserTokenExchange
-          Name: zhb4_tile_misdatos_uaa_ZHB4_TILE_MISDATOS
-          ServiceInstanceName: ZHB4_TILE_MISDATOS-xsuaa-service
-          ServiceKeyName: uaa_ZHB4_TILE_MISDATOS-key
-          sap.cloud.service: zhb4_tile_misdatos
+          Name: zhb4_tile_stewardship_uaa_zhb4_tile_stewardship
+          ServiceInstanceName: zhb4_tile_stewardship-xsuaa-service
+          ServiceKeyName: uaa_zhb4_tile_stewardship-key
+          sap.cloud.service: zhb4_tile_stewardship
         existing_destinations_policy: ignore
   build-parameters:
     no-source: true
-- name: ZHB4_TILE_MISDATOS_ui_deployer
+- name: zhb4_tile_stewardship_ui_deployer
   type: com.sap.application.content
   path: .
   requires:
-  - name: ZHB4_TILE_MISDATOS_html_repo_host
+  - name: zhb4_tile_stewardship_html_repo_host
     parameters:
       content-target: true
   build-parameters:
     build-result: resources
     requires:
     - artifacts:
-      - zhb4_tile_misdatos-content.zip
-      name: zhb4_tile_misdatos
+      - zhb4_tile_stewardship-content.zip
+      name: zhb4_tile_stewardship
       target-path: resources/
-- name: zhb4_tile_misdatos
+- name: zhb4_tile_stewardship
   type: html5
-  path: zhb4_tile_misdatos
+  path: zhb4_tile_stewardship
   build-parameters:
     builder: custom
     commands:
     - npm run build
     supported-platforms: []
 resources:
-- name: ZHB4_TILE_MISDATOS-destination-service
+- name: zhb4_tile_stewardship-destination-service
   type: org.cloudfoundry.managed-service
   parameters:
     config:
       HTML5Runtime_enabled: true
       version: 1.0.0
     service: destination
-    service-name: ZHB4_TILE_MISDATOS-destination-service
+    service-name: zhb4_tile_stewardship-destination-service
     service-plan: lite
-- name: ZHB4_TILE_MISDATOS_html_repo_host
+- name: zhb4_tile_stewardship_html_repo_host
   type: org.cloudfoundry.managed-service
   parameters:
     service: html5-apps-repo
-    service-name: ZHB4_TILE_MISDATOS-html5-app-host-service
+    service-name: zhb4_tile_stewardship-html5-app-host-service
     service-plan: app-host
-- name: uaa_ZHB4_TILE_MISDATOS
+- name: uaa_zhb4_tile_stewardship
   type: org.cloudfoundry.managed-service
   parameters:
     path: ./xs-security.json
     service: xsuaa
-    service-name: ZHB4_TILE_MISDATOS-xsuaa-service
+    service-name: zhb4_tile_stewardship-xsuaa-service
     service-plan: application
 build-parameters:
   before-all:

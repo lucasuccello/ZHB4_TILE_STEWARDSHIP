@@ -2,14 +2,14 @@
     "_version": "1.12.0",
     "sap.flp": {
         "type": "tile",
-        "tileSize": "1x1"
+        "tileSize": "1x2"
     },
 	"sap.app": {
-		"id": "zhb4.zhb4_tile_misdatos",
+		"id": "zhb4.zhb4_tile_stewardship",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
-			"version": "1.0.1"
+			"version": "1.0.5"
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
@@ -21,7 +21,7 @@
         },
         "dataSources": {
         "mainService": {
-            "uri": "sap/opu/odata/sap/ZOS_HB4_MIS_DATOS_SRV/",
+            "uri": "sap/opu/odata/sap/ZOS_HB4_STEWARDSHIP_SRV/",
             "type": "OData",
             "settings": {
             "odataVersion": "2.0",
@@ -33,7 +33,7 @@
 	
 	"sap.cloud": {
 		"public": true,
-		"service": "zhb4_tile_misdatos"
+		"service": "zhb4_tile_stewardship"
 	},
 	
 	"sap.ui": {
@@ -56,7 +56,7 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "zhb4.zhb4_tile_misdatos.view.Tile",
+			"viewName": "zhb4.zhb4_tile_stewardship.view.Tile",
 			"type": "XML",
 			"async": true,
 			"id": "Tile"
@@ -77,7 +77,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "zhb4.zhb4_tile_misdatos.i18n.i18n"
+					"bundleName": "zhb4.zhb4_tile_stewardship.i18n.i18n"
 				}
             },
             "": {
@@ -100,7 +100,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "zhb4.zhb4_tile_misdatos.view",
+				"viewPath": "zhb4.zhb4_tile_stewardship.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false

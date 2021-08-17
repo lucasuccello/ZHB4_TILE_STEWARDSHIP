@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"zhb4/zhb4_tile_misdatos/model/models"
+	"zhb4/zhb4_tile_stewardship/model/models"
 ], function (UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("zhb4.zhb4_tile_misdatos.Component", {
+	return UIComponent.extend("zhb4.zhb4_tile_stewardship.Component", {
 
 		metadata: {
 			manifest: "json"

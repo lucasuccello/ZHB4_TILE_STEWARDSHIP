@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"zhb4/zhb4_tile_misdatos/controller/Tile.controller"
+	"zhb4/zhb4_tile_stewardship/controller/Tile.controller"
 ], function (Controller) {
 	"use strict";
 

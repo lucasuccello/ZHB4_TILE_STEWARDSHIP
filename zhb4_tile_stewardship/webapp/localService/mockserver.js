@@ -7,7 +7,7 @@ sap.ui.define([
     "use strict";
 
     var oMockServer,
-        _sAppPath = "zhb4/zhb4_tile_misdatos/",
+        _sAppPath = "zhb4/zhb4_tile_stewardship/",
         _sJsonFilesPath = _sAppPath + "localService/mockdata";
 
     var oMockServerInterface = {

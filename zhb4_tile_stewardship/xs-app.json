@@ -8,7 +8,7 @@
     {
       "authenticationType": "none",
       "csrfProtection": false,
-      "source": "^/sap/opu/odata/sap/ZOS_HB4_MIS_DATOS_SRV/",
+      "source": "^/sap/opu/odata/sap/ZOS_HB4_STEWARDSHIP_SRV/",
       "destination": "HB4_BACKEND_SAP"
     },
     {

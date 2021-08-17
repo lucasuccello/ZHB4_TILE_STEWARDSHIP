@@ -1,7 +1,0 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" controllerName="zhb4.zhb4_tile_misdatos.controller.Tile" displayBlock="true">
-	<GenericTile header="Mis Datos" subheader="Gestión general" frameType="OneByOne" press="onPressTile" headerImage="{imageModel>/path}/Image/iso.png">
-		<TileContent id="_tileContent" footer="">
-			<FeedContent contentText="Completa datos personales e Impositivos." subheader="Documentación"/>
-		</TileContent>
-	</GenericTile>
-</mvc:View>

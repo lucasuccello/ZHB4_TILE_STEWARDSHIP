@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run ZHB4_TILE_STEWARDSHIP-zhb4_tile_stewardship",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/zhb4zhb4_tile_stewardship/index.html",
+        "--ui5",
+        "{\"version\":\"1.87.7\"}"
+      ],
+      "cwd": "${workspaceFolder}/zhb4_tile_stewardship",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/ZHB4_TILE_STEWARDSHIP/zhb4_tile_stewardship\"}"
+      },
+      "envFile": "${workspaceFolder}/zhb4_tile_stewardship/.env1",
+      "preLaunchTask": "Build ZHB4_TILE_STEWARDSHIP"
+    }
+  ]
+}

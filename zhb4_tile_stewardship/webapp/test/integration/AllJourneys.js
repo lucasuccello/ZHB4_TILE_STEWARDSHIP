@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "zhb4.zhb4_tile_misdatos.view.",
+		viewNamespace: "zhb4.zhb4_tile_stewardship.view.",
 		autoWait: true
 	});
 });

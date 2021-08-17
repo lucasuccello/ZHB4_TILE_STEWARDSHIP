@@ -1,6 +1,6 @@
 specVersion: '1.0'
 metadata:
-  name: zhb4_tile_misdatos
+  name: zhb4_tile_stewardship
 type: application
 resources:
   configuration:
